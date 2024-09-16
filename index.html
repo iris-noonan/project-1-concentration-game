@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/app.js"></script>
+    <title>Concentration matching game</title>
+</head>
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title">Concentration matching game</h2>
+          <img id="calcifer-img" width="500" src="./images/calcifer-img.webp" alt="Calcifer image" />
+          <div class="modal-buttons">
+            <button id="play">PLAY</button>
+            <button id="sound">Sound: On/off</button>
+          </div>
+
+          <p>Intructions: Start the game by pressing play. The timer will start.
+            Select a square to turn and show a Studio Ghibli film.
+            Select another square to try to find the matching film.
+            If it's a match you win, if not the square will return to the original
+            form until you find two matching films.
+            Continue to play until you match all the films and all the squares are 
+            revealed. Try to complete this in the least amount of time and moves!</p>
+        </div>
+      
+      </div>
+    
+    <div id="main-area">
+        <div class="left-panel">
+            <div id="timer">
+                <span id="timer-label">Timer: </span>
+                <span id="timer-total"></span>
+            </div>
+            <div id="moves">
+                <span id="moves-label">Moves: </span>
+                <span id="moves-total"></span>
+            </div>
+        </div>
+
+        <section class="board">
+            <div class="sqr" id="0"></div>
+            <div class="sqr" id="1"></div>
+            <div class="sqr" id="2"></div>
+            <div class="sqr" id="3"></div>
+            <div class="sqr" id="4"></div>
+            <div class="sqr" id="5"></div>
+            <div class="sqr" id="6"></div>
+            <div class="sqr" id="7"></div>
+            <div class="sqr" id="8"></div>
+            <div class="sqr" id="9"></div>
+            <div class="sqr" id="10"></div>
+            <div class="sqr" id="11"></div>
+            <div class="sqr" id="12"></div>
+            <div class="sqr" id="13"></div>
+            <div class="sqr" id="14"></div>
+            <div class="sqr" id="15"></div>
+            <div class="sqr" id="16"></div>
+            <div class="sqr" id="17"></div>
+            <div class="sqr" id="18"></div>
+            <div class="sqr" id="19"></div>
+            <div class="sqr" id="20"></div>
+            <div class="sqr" id="21"></div>
+            <div class="sqr" id="22"></div>
+            <div class="sqr" id="23"></div>
+            <div class="sqr" id="24"></div>
+            <div class="sqr" id="25"></div>
+            <div class="sqr" id="26"></div>
+            <div class="sqr" id="27"></div>
+            <div class="sqr" id="28"></div>
+            <div class="sqr" id="29"></div>
+            <div class="sqr" id="30"></div>
+            <div class="sqr" id="31"></div>
+            <div class="sqr" id="32"></div>
+            <div class="sqr" id="33"></div>
+            <div class="sqr" id="34"></div>
+            <div class="sqr" id="35"></div>
+        </section>
+        <div class="scoreboard">
+            <div id="scoreboard-title">
+                SCOREBOARD
+            </div>
+            <div class="table" id="table">
+                <div class="table-row">
+                    <div class="table-row-cell table-title-time">
+                        Time
+                    </div>
+                    <div class="table-row-cell table-title-moves">
+                        Moves
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-row-cell table-result-time">
+                        00:30 
+                    </div>
+                    <div class="table-row-cell table-result-moves">
+                        18
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    <div id="game-buttons">
+        <button id="reset">Reset</button>
+        <button id="back">Back</button>
+    </div>
+</body>
+</html>
