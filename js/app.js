@@ -102,7 +102,7 @@ function flipCard() {
 function isGameLost() {
     const currentTime = new Date().getTime();
     const time = currentTime - startTime;
-    if ((time / 1000) >= rules.time || moves >= 2) {
+    if ((time / 1000) >= rules.time || moves >= rules.moves) {
         gameLost = true;
         gameLostModal.style.display = "block";
         addScoreToScoreboard();
