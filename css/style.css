@@ -116,7 +116,7 @@ body {
     flex: 1;
 }
 
-.scoreboard-boarder {
+.scoreboard-board-list {
     flex: 0 1 80px;
     border: 3px solid rgb(6, 44, 44);
     border-radius: 15px;
@@ -130,6 +130,14 @@ body {
 
 .table-row {
     display: flex;
+}
+
+.won {
+    color: green;
+}
+
+.lost {
+    color: red;
 }
 
 .table-row-cell {

@@ -24,6 +24,7 @@ const gameLostModal = document.querySelector("#gameLostModal");
 const gameWonModal = document.querySelector("#gameWonModal");
 const openModal = document.querySelector("#openModal");
 const closeButton = document.querySelector(".close");
+const scoreboardBoardList = document.querySelector(".scoreboard-board-list");
 /*-------------- Functions -------------*/
 setInterval(() => {
     const currentTime = new Date().getTime();
@@ -100,9 +101,10 @@ function flipCard() {
 function isGameLost() {
     const currentTime = new Date().getTime();
     const time = currentTime - startTime;
-    if ((time / 1000) >= rules.time || moves >= rules.move) {
+    if ((time / 1000) >= rules.time || moves >= 2) {
         gameLost = true;
         gameLostModal.style.display = "block";
+        addScoreToScoreboard();
     }
 }
 
@@ -126,13 +128,31 @@ function checkMatchTotal() {
 function isGameWon() {
     checkMatchTotal();
     if (matchTotal === (rules.cardPairs * 2)) {
-        isGameWon = true
+        gameWon = true;
         gameWonModal.style.display = "block";
+        addScoreToScoreboard();
     }
 }
 
 function addScoreToScoreboard() {
-    
+    const currentTime = new Date().getTime();
+    const difference = currentTime - startTime;
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    const scoreBoardRow = document.createElement("div");
+    scoreBoardRow.classList.add("table-row");
+    const gameResultClass = gameWon ? 'won' : 'lost';
+    console.log("GAME WON: ", gameWon);
+    scoreBoardRow.innerHTML = `
+        <div class="table-row-cell table-result-time ${gameResultClass}">
+            ${minutes}:${seconds} 
+        </div>
+        <div class="table-row-cell table-result-moves ${gameResultClass}"">
+            ${moves}
+        </div>
+    `
+    scoreboardBoardList.appendChild(scoreBoardRow);
 }
 
 function disableCards() {
