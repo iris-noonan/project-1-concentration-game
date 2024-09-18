@@ -1,0 +1,74 @@
+[
+    {
+        "image": "../images/arriety.jpeg",
+        "name": "arriety"
+    },
+    {
+        "image": "../images/boy.jpeg",
+        "name": "boy"
+    },
+    {
+        "image": "../images/castle.png",
+        "name": "castle"
+    },
+    {
+        "image": "../images/cat.jpeg",
+        "name": "cat"
+    },
+    {
+        "image": "../images/grave.jpeg",
+        "name": "grave"
+    },
+    {
+        "image": "../images/howls.webp",
+        "name": "howls"
+    },
+    {
+        "image": "../images/kaguya.jpeg",
+        "name": "kaguya"
+    },
+    {
+        "image": "../images/kikis.png",
+        "name": "kikis"
+    },
+    {
+        "image": "../images/marnie.jpeg",
+        "name": "marnie"
+    },
+    {
+        "image": "../images/mononoke.jpeg",
+        "name": "mononoke"
+    },
+    {
+        "image": "../images/nausicaa.jpeg",
+        "name": "nausicaa"
+    },
+    {
+        "image": "../images/ponyo.jpeg",
+        "name": "ponyo"
+    },
+    {
+        "image": "../images/porco.jpeg",
+        "name": "porco"
+    },
+    {
+        "image": "../images/spirited.jpeg",
+        "name": "spirited"
+    },
+    {
+        "image": "../images/tales.jpeg",
+        "name": "tales"
+    },
+    {
+        "image": "../images/totoro.jpeg",
+        "name": "totoro"
+    },
+    {
+        "image": "../images/wind.jpeg",
+        "name": "wind"
+    },
+    {
+        "image": "../images/wisper.jpeg",
+        "name": "wisper"
+    }
+]

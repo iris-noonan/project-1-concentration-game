@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+    <button id="openModal">Open Modal</button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -37,77 +37,48 @@
     
     <div id="main-area">
         <div class="left-panel">
-            <div id="timer">
-                <span id="timer-label">Timer: </span>
-                <span id="timer-total"></span>
-            </div>
-            <div id="moves">
-                <span id="moves-label">Moves: </span>
-                <span id="moves-total"></span>
+            <div class="panel-padding">
+                <div id="timer">
+                    <span id="timer-label">Timer: </span>
+                    <span id="timer-total"></span>
+                </div>
+                <div id="moves">
+                    <span id="moves-label">Moves: </span>
+                    <span id="moves-total"></span>
+                </div>
+                <div id="lockboard">
+                    <span id="moves-label">Lockboard: </span>
+                    <span id="lockboard"></span>
+                </div>
             </div>
         </div>
 
-        <section class="board">
-            <div class="sqr" id="0"></div>
-            <div class="sqr" id="1"></div>
-            <div class="sqr" id="2"></div>
-            <div class="sqr" id="3"></div>
-            <div class="sqr" id="4"></div>
-            <div class="sqr" id="5"></div>
-            <div class="sqr" id="6"></div>
-            <div class="sqr" id="7"></div>
-            <div class="sqr" id="8"></div>
-            <div class="sqr" id="9"></div>
-            <div class="sqr" id="10"></div>
-            <div class="sqr" id="11"></div>
-            <div class="sqr" id="12"></div>
-            <div class="sqr" id="13"></div>
-            <div class="sqr" id="14"></div>
-            <div class="sqr" id="15"></div>
-            <div class="sqr" id="16"></div>
-            <div class="sqr" id="17"></div>
-            <div class="sqr" id="18"></div>
-            <div class="sqr" id="19"></div>
-            <div class="sqr" id="20"></div>
-            <div class="sqr" id="21"></div>
-            <div class="sqr" id="22"></div>
-            <div class="sqr" id="23"></div>
-            <div class="sqr" id="24"></div>
-            <div class="sqr" id="25"></div>
-            <div class="sqr" id="26"></div>
-            <div class="sqr" id="27"></div>
-            <div class="sqr" id="28"></div>
-            <div class="sqr" id="29"></div>
-            <div class="sqr" id="30"></div>
-            <div class="sqr" id="31"></div>
-            <div class="sqr" id="32"></div>
-            <div class="sqr" id="33"></div>
-            <div class="sqr" id="34"></div>
-            <div class="sqr" id="35"></div>
-        </section>
+        <div class="grid-container">
+        </div>
         <div class="scoreboard">
-            <div id="scoreboard-title">
-                SCOREBOARD
-            </div>
-            <div class="table" id="table">
-                <div class="table-row">
-                    <div class="table-row-cell table-title-time">
-                        Time
+            <div class="panel-padding scoreboard-boarder">
+                <div id="scoreboard-title">
+                    SCOREBOARD
+                </div>
+                <div class="table" id="table">
+                    <div class="table-row">
+                        <div class="table-row-cell table-title-time">
+                            Time
+                        </div>
+                        <div class="table-row-cell table-title-moves">
+                            Moves
+                        </div>
                     </div>
-                    <div class="table-row-cell table-title-moves">
-                        Moves
+                    <div class="table-row">
+                        <div class="table-row-cell table-result-time">
+                            00:30 
+                        </div>
+                        <div class="table-row-cell table-result-moves">
+                            18
+                        </div>
                     </div>
                 </div>
-                <div class="table-row">
-                    <div class="table-row-cell table-result-time">
-                        00:30 
-                    </div>
-                    <div class="table-row-cell table-result-moves">
-                        18
-                    </div>
-                </div>
             </div>
-            </section>
         </div>
     </div>
     <div id="game-buttons">
