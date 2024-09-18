@@ -8,20 +8,20 @@
     <title>Concentration matching game</title>
 </head>
 <body>
-    <!-- Trigger/Open The Modal -->
-    <button id="openModal">Open Modal</button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
           <h2 id="modal-title">Concentration matching game</h2>
           <img id="calcifer-img" width="500" src="./images/calcifer-img.webp" alt="Calcifer image" />
           <div class="modal-buttons">
-            <button id="play">PLAY</button>
-            <button id="sound">Sound: On/off</button>
+            <div id="modal-buttons-left"></div>
+            <button class="button" id="play">PLAY</button>
+            <div id="modal-buttons-right">
+                <button class="button" id="sound">Sound: On/off</button>
+            </div>
           </div>
 
           <p>Intructions: Start the game by pressing play. The timer will start.
@@ -88,8 +88,8 @@
         </div>
     </div>
     <div id="game-buttons">
-        <button id="reset">Reset</button>
-        <button id="back">Back</button>
+        <button class="button" id="reset">Reset</button>
+        <button class="button" id="back">Back</button>
     </div>
 </body>
 </html>

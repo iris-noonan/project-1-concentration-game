@@ -20,10 +20,11 @@ const gridContainer = document.querySelector(".grid-container");
 let gridCards = [];
 const movesTotal = document.querySelector("#moves-total");
 const modal = document.querySelector("#myModal");
+const playButton = document.querySelector("#play");
+const resetButton = document.querySelector("#reset");
+const backButton = document.querySelector("#back");
 const gameLostModal = document.querySelector("#gameLostModal");
 const gameWonModal = document.querySelector("#gameWonModal");
-const openModal = document.querySelector("#openModal");
-const closeButton = document.querySelector(".close");
 const scoreboardBoardList = document.querySelector(".scoreboard-board-list");
 /*-------------- Functions -------------*/
 setInterval(() => {
@@ -179,16 +180,29 @@ function resetBoard() {
 }
 
 function restart() {
+    startTime = new Date().getTime();
+    resetBoard();
+    moves = 0;
+    gameLost = false;
+    gameWon = false;
+    matchTotal = 0;
     resetBoard();
     shuffleCards();
-    moves = 0;
     movesTotal.innerHTML = moves;
     gridContainer.innerHTML = "";
     generateCards();
 }
 /*----------- Event Listeners ----------*/
+playButton.onclick = function() {
+    restart();
+    modal.style.display = "none";
+}
 
-openModal.onclick = function() {
+resetButton.onclick = function() {
+    restart();
+}
+
+backButton.onclick = function() {
     showModal();
 }
 
@@ -196,15 +210,6 @@ const showModal = function() {
     modal.style.display = "block";
 }
 
-closeButton.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 movesTotal.innerHTML = moves;
 
