@@ -9,11 +9,13 @@ let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let moves = 0;
+let gameLost = false;
 /*----- Cached Element References  -----*/
 const timerTotal = document.querySelector("#timer-total");
 const gridContainer = document.querySelector(".grid-container");
 const movesTotal = document.querySelector("#moves-total");
 const modal = document.querySelector("#myModal");
+const gameLostModal = document.querySelector("#gameLostModal");
 const openModal = document.querySelector("#openModal");
 const closeButton = document.querySelector(".close");
 /*-------------- Functions -------------*/
@@ -83,7 +85,17 @@ function flipCard() {
     movesTotal.innerHTML = moves;
     lockBoard = true;
 
+    isGameLost();
     checkForMatch();
+}
+
+function isGameLost() {
+    const currentTime = new Date().getTime();
+    const time = currentTime - startTime;
+    if ((time / 1000) >= rules.time || moves >= rules.move) {
+        gameLost = true;
+        gameLostModal.style.display = "block";
+    }
 }
 
 function checkForMatch() {
