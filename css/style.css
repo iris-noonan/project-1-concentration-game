@@ -59,12 +59,21 @@ body {
 }
 
 #play {
-    padding: 15px;
+    padding: 10px;
+    background-color: rgb(195, 250, 245);
+    color:rgb(25, 225, 195);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 #sound {
     float: right;
     padding: 10px;
+    background-color: rgb(195, 250, 245);
+    color: rgb(25, 225, 195);
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 #main-area {

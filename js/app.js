@@ -1,5 +1,6 @@
 /*-------------- Constants -------------*/
 const rules = {
+    cardPairs: 18,
     moves: 50,
     time: 150
 };
@@ -10,12 +11,17 @@ let firstCard, secondCard;
 let lockBoard = false;
 let moves = 0;
 let gameLost = false;
+let gameWon = false;
+let matchTotal = 0;
 /*----- Cached Element References  -----*/
 const timerTotal = document.querySelector("#timer-total");
 const gridContainer = document.querySelector(".grid-container");
+// gridCards can't be set at start as cards are generated later
+let gridCards = [];
 const movesTotal = document.querySelector("#moves-total");
 const modal = document.querySelector("#myModal");
 const gameLostModal = document.querySelector("#gameLostModal");
+const gameWonModal = document.querySelector("#gameWonModal");
 const openModal = document.querySelector("#openModal");
 const closeButton = document.querySelector(".close");
 /*-------------- Functions -------------*/
@@ -66,6 +72,7 @@ function generateCards() {
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener("click", flipCard);
+        gridCards = document.querySelectorAll(".card");
     }
 }
 
@@ -87,6 +94,7 @@ function flipCard() {
 
     isGameLost();
     checkForMatch();
+    isGameWon();
 }
 
 function isGameLost() {
@@ -104,7 +112,32 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
 }
 
+function checkMatchTotal() {
+    let matches = 0;
+    gridCards.forEach((card) => {
+        const match = card.getAttribute("data-match");
+        if (match) {
+            matches += 1;
+        }
+    });
+    matchTotal = matches;
+}
+
+function isGameWon() {
+    checkMatchTotal();
+    if (matchTotal === (rules.cardPairs * 2)) {
+        isGameWon = true
+        gameWonModal.style.display = "block";
+    }
+}
+
+function addScoreToScoreboard() {
+    
+}
+
 function disableCards() {
+    firstCard.setAttribute("data-match", true);
+    secondCard.setAttribute("data-match", true);
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
 
