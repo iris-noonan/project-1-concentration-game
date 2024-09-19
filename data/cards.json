@@ -1,74 +1,74 @@
 [
     {
-        "image": "../images/arriety.jpeg",
+        "image": "../assets/images/arriety.jpeg",
         "name": "arriety"
     },
     {
-        "image": "../images/boy.jpeg",
+        "image": "../assets/images/boy.jpeg",
         "name": "boy"
     },
     {
-        "image": "../images/castle.png",
+        "image": "../assets/images/castle.png",
         "name": "castle"
     },
     {
-        "image": "../images/cat.jpeg",
+        "image": "../assets/images/cat.jpeg",
         "name": "cat"
     },
     {
-        "image": "../images/grave.jpeg",
+        "image": "../assets/images/grave.jpeg",
         "name": "grave"
     },
     {
-        "image": "../images/howls.webp",
+        "image": "../assets/images/howls.webp",
         "name": "howls"
     },
     {
-        "image": "../images/kaguya.jpeg",
+        "image": "../assets/images/kaguya.jpeg",
         "name": "kaguya"
     },
     {
-        "image": "../images/kikis.png",
+        "image": "../assets/images/kikis.png",
         "name": "kikis"
     },
     {
-        "image": "../images/marnie.jpeg",
+        "image": "../assets/images/marnie.jpeg",
         "name": "marnie"
     },
     {
-        "image": "../images/mononoke.jpeg",
+        "image": "../assets/images/mononoke.jpeg",
         "name": "mononoke"
     },
     {
-        "image": "../images/nausicaa.jpeg",
+        "image": "../assets/images/nausicaa.jpeg",
         "name": "nausicaa"
     },
     {
-        "image": "../images/ponyo.jpeg",
+        "image": "../assets/images/ponyo.jpeg",
         "name": "ponyo"
     },
     {
-        "image": "../images/porco.jpeg",
+        "image": "../assets/images/porco.jpeg",
         "name": "porco"
     },
     {
-        "image": "../images/spirited.jpeg",
+        "image": "../assets/images/spirited.jpeg",
         "name": "spirited"
     },
     {
-        "image": "../images/tales.jpeg",
+        "image": "../assets/images/tales.jpeg",
         "name": "tales"
     },
     {
-        "image": "../images/totoro.jpeg",
+        "image": "../assets/images/totoro.jpeg",
         "name": "totoro"
     },
     {
-        "image": "../images/wind.jpeg",
+        "image": "../assets/images/wind.jpeg",
         "name": "wind"
     },
     {
-        "image": "../images/wisper.jpeg",
+        "image": "../assets/images/wisper.jpeg",
         "name": "wisper"
     }
 ]

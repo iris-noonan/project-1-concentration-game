@@ -115,6 +115,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: fit-content;
 }
 
 .scoreboard-board-list {
@@ -148,7 +149,8 @@ body {
 #game-buttons {
     display: flex;
     width: 100%;
-    justify-content: space-between;   
+    justify-content: space-around;
+    padding: 20px;   
 }
 
 .flip-card {

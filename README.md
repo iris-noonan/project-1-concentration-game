@@ -15,3 +15,7 @@ add timing and moves to scoreboard
 get buttons to work play, sound on/off, reset & back
 add timing and moves to the scoreboard at the end of the game
 display a win/loose message
+
+get sound function working
+tidy up the code
+get the visuals as intended

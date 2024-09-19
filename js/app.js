@@ -223,3 +223,17 @@ gameWonModalClose.onclick = function() {
 movesTotal.innerHTML = moves;
 
 showModal();
+
+
+
+const soundOnButton = document.querySelector('#sound')
+const totoroTheme = new Audio('../assets/sound/Path of the wind - Joe Hisaishi.m4a')
+soundOnButton.addEventListener("click", (evt) => {
+    if (!totoroTheme.paused) {
+        totoroTheme.pause();
+    } else {
+        totoroTheme.volume = .05
+        totoroTheme.play();
+        totoroTheme.loop = true;
+    }
+})
