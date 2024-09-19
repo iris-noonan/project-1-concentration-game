@@ -23,8 +23,10 @@ const modal = document.querySelector("#myModal");
 const playButton = document.querySelector("#play");
 const resetButton = document.querySelector("#reset");
 const backButton = document.querySelector("#back");
-const gameLostModal = document.querySelector("#gameLostModal");
-const gameWonModal = document.querySelector("#gameWonModal");
+const gameLostModal = document.querySelector("#game-lost-modal");
+const gameLostModalClose = document.querySelector("#game-lost-modal-close");
+const gameWonModal = document.querySelector("#game-won-modal");
+const gameWonModalClose = document.querySelector("#game-won-modal-close");
 const scoreboardBoardList = document.querySelector(".scoreboard-board-list");
 /*-------------- Functions -------------*/
 setInterval(() => {
@@ -210,6 +212,13 @@ const showModal = function() {
     modal.style.display = "block";
 }
 
+gameLostModalClose.onclick = function() {
+    gameLostModal.style.display = "none";
+}
+
+gameWonModalClose.onclick = function() {
+    gameWonModal.style.display = "none";
+}
 
 movesTotal.innerHTML = moves;
 
