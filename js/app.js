@@ -69,7 +69,7 @@ function generateCards() {
                     <div class="flip-card-front">
                     </div>
                     <div class="flip-card-back">
-                        <img class="flip-card-front-image" src=${card.image} />
+                        <img class="flip-card-front-image" src=${card.image} alt="Card image for ${card.name}" />
                     </div>
                 </div>
             </div>
