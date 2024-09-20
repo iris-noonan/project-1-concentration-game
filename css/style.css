@@ -21,8 +21,8 @@ body {
   
 /* Modal Content/Box */
 .modal-content {
-    background-color: #0de1c5;
-    margin: 20% auto; /* 20% from the top and centered */
+    background-color: rgb(25, 225, 195);
+    margin: 120px auto; /* 20% from the top and centered */
     padding: 40px;
     border: 1px solid #888;
     width: 70%; /* Could be more or less, depending on screen size */
@@ -138,9 +138,12 @@ body {
 .panel-padding {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+}
+
+.left-panel-padding {
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
 .grid-container {
@@ -171,19 +174,28 @@ body {
 }
 
 .scoreboard-board-list {
-    flex: 0 1 80px;
     border: 3px solid rgb(6, 44, 44);
     border-radius: 15px;
+    margin-top: 70px;
     padding: 10px;
     height: 100%;
+    max-width: 200px;
+    align-items: center;
 }
 
 #scoreboard-title {
     padding: 0 20px
 }
 
+.table {
+    display: flex;
+    width: 100%;
+}
+
 .table-row {
     display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .won {
