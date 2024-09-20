@@ -1,8 +1,22 @@
+:root {
+    --text-primary: #0D7365;
+    --text-main: #010000;
+    --background: #19e1c3;
+    --button-background: #c3faf5;
+    --overlay: #00000066;
+    --overlay-fallback: #000000;
+    --orange: #F6AD55;
+    --card-background: #f6f6f6;
+    --won: #249608;
+    --lost: #9c0b0b;
+}
+
 body {
-    background-color: rgb(25, 225, 195);
+    background-color: var(--background);
     /* Use a system font, if none are available use an available sans-sarif */
     font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 0;
+    color: var(--text-main);
 }
 
 /* The Modal (background) */
@@ -15,16 +29,15 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: var(--overlay-fallback); /* Fallback color */
+    background-color: var(--overlay); /* Black w/ opacity */
 }
   
 /* Modal Content/Box */
 .modal-content {
-    background-color: rgb(25, 225, 195);
+    background-color: var(--background);
     margin: 120px auto; /* 20% from the top and centered */
     padding: 40px;
-    border: 1px solid #888;
     width: 70%; /* Could be more or less, depending on screen size */
     border-radius: 30px;
 }
@@ -40,7 +53,7 @@ body {
 }
 
 .close {
-    color: #010000;
+    color: var(--text-main);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -49,8 +62,8 @@ body {
 .button {
     text-align: center;
     padding: 12px 26px;
-    background-color: rgb(195, 250, 245);
-    color:rgb(25, 225, 195);
+    background-color: var(--button-background);
+    color: var(--text-primary);
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
@@ -90,18 +103,11 @@ body {
 }
 
 #timer {
-    border: 3px solid black;
+    border: 3px solid var(--text-primary);
     border-radius: 16px;
     padding: 10px;
     margin: 30px;
 }
-
-/* #moves {
-    border: 3px solid black;
-    border-radius: 16px;
-    padding: 10px;
-    margin: 100px 30px 30px;
-} */
 
 #moves {
     margin: 100px 30px 30px;
@@ -122,7 +128,7 @@ body {
     top: 0;
     width: 50px;
     height: 80px;
-    background: hsla(32.8, 89.89999999999999%, 64.9%, 1);
+    background: var(--orange);
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
@@ -159,7 +165,7 @@ body {
     height: calc(100px);
     width: 100px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--card-background);
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
@@ -174,7 +180,7 @@ body {
 }
 
 .scoreboard-board-list {
-    border: 3px solid rgb(6, 44, 44);
+    border: 3px solid var(--text-primary);
     border-radius: 15px;
     margin-top: 70px;
     padding: 10px;
@@ -195,15 +201,16 @@ body {
 .table-row {
     display: flex;
     flex: 1;
+    width: 100%;
     justify-content: space-between;
 }
 
 .won {
-    color: green;
+    color: var(--won);
 }
 
 .lost {
-    color: red;
+    color: var(--lost);
 }
 
 .table-row-cell {
@@ -263,5 +270,5 @@ body {
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    background: white;
+    background: var(--card-background);
 }
