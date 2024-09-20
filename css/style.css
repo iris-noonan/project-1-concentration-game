@@ -254,7 +254,7 @@ body {
 }
 
 .flip-card-front {
-    background-image: url('./assets/images/card-background.svg');
+    background-image: url('../assets/images/card-background.svg');
     background-position: center center;
     background-size: cover;
 }

@@ -227,7 +227,7 @@ showModal();
 
 
 const soundOnButton = document.querySelector('#sound')
-const totoroTheme = new Audio('../assets/sound/Path of the wind - Joe Hisaishi.m4a')
+const totoroTheme = new Audio('./assets/sound/Path of the wind - Joe Hisaishi.m4a')
 soundOnButton.addEventListener("click", (evt) => {
     if (!totoroTheme.paused) {
         totoroTheme.pause();
