@@ -28,7 +28,8 @@ Planning section in this readme.
 
 ## Attributions
 
-Google Image Search for in game images
+* Google Image Search for in game images
+* [Pattern Monster](https://pattern.monster/) for card background pattern
 
 ## Technologies used
 
