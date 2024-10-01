@@ -5,14 +5,16 @@
   </a>
 </p>
 
-Concentration matching game tests your ability to find and remember cards you have turned over. Can you match all the cards before you run out of moves or the timer catches you!
+Deployed project link: [Concentration matching game](https://iris-noonan.github.io/project-1-concentration-game/)
 
-### Logo
+Concentration matching game tests your ability to find and remember cards you have turned over. Can you match all the cards before you run out of moves or the timer catches you!
 
 ### Screenshot
 ![Game screenshot](./assets/images/screenshot.png)
 
 ## Getting started
+
+Using VSCode Open with Live Server [⌘L ⌘O]
 
 ### Game Rules
 
