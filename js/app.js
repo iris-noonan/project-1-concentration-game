@@ -28,6 +28,7 @@ const gameLostModalClose = document.querySelector("#game-lost-modal-close");
 const gameWonModal = document.querySelector("#game-won-modal");
 const gameWonModalClose = document.querySelector("#game-won-modal-close");
 const scoreboardBoardList = document.querySelector(".scoreboard-board-list");
+const scoreboardBoardTable = document.querySelector("#table");
 /*-------------- Functions -------------*/
 setInterval(() => {
     const currentTime = new Date().getTime();
@@ -155,7 +156,7 @@ function addScoreToScoreboard() {
             ${moves}
         </div>
     `
-    scoreboardBoardList.appendChild(scoreBoardRow);
+    scoreboardBoardTable.appendChild(scoreBoardRow);
 }
 
 function disableCards() {

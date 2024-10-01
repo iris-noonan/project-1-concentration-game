@@ -195,12 +195,12 @@ body {
 
 .table {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .table-row {
     display: flex;
-    flex: 1;
     width: 100%;
     justify-content: space-between;
 }
